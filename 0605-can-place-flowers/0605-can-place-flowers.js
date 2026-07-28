@@ -12,8 +12,8 @@ function canPlaceFlowers(flowerbed, n) {
             const rightEmpty = i === flowerbed.length - 1 || flowerbed[i + 1] === 0;
 
             if (leftEmpty && rightEmpty) {
-                flowerbed[i] = 1;   // plant the flower
                 count++;
+                flowerbed[i] = 1;
             }
         }
     }
