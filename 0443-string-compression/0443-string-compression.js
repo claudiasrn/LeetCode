@@ -23,11 +23,9 @@ var compress = function(chars) {
         s += counter;
     }
 
-    while(chars.length > 0) {
-        chars.pop();
-    }
-
     for(let i = 0; i < s.length; i++) {
         chars[i] = s.charAt(i);
     }
+
+    return s.length;
 };
